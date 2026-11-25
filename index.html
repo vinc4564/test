@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agora — the political theory &amp; IR feed</title>
+  <meta name="description" content="An X-style timeline where every post is a seminal paper in political theory and international relations." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="rail rail-left">
+      <a class="logo" href="#" data-view="home" aria-label="Agora home">
+        <span class="logo-mark">🏛️</span><span class="logo-text">Agora</span>
+      </a>
+      <nav class="nav" id="nav">
+        <button class="nav-item" data-view="home"><span class="nav-icon" data-icon="home"></span><span class="nav-label">Home</span></button>
+        <button class="nav-item" data-view="explore"><span class="nav-icon" data-icon="explore"></span><span class="nav-label">Explore</span></button>
+        <button class="nav-item" data-view="bookmarks"><span class="nav-icon" data-icon="bookmark"></span><span class="nav-label">Bookmarks</span></button>
+        <button class="nav-item" data-view="about"><span class="nav-icon" data-icon="info"></span><span class="nav-label">About</span></button>
+      </nav>
+      <button class="post-btn" id="open-composer"><span class="nav-icon" data-icon="feather"></span><span class="nav-label">Post a paper</span></button>
+      <div class="rail-foot">
+        <span class="rail-note">Abstracts of the classics.<br />Political theory &amp; IR.</span>
+      </div>
+    </header>
+
+    <main class="timeline" id="main">
+      <noscript>Agora needs JavaScript to render the feed.</noscript>
+    </main>
+
+    <aside class="rail rail-right">
+      <div class="search-wrap">
+        <span class="search-icon" data-icon="search"></span>
+        <input id="search" type="search" placeholder="Search papers" autocomplete="off" />
+      </div>
+      <section class="panel" id="trending"></section>
+      <section class="panel" id="suggested"></section>
+      <footer class="aside-foot">Agora · a reading feed · seeded from the classics</footer>
+    </aside>
+  </div>
+
+  <div id="modal-root"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
